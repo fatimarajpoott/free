@@ -1,0 +1,248 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 126px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 668px;
+    margin-top: -50px;
+    
+}
+nav ul li{
+padding-left: 74px;
+list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+position: absolute;
+bottom: -5px;
+left: 50%;
+transform: translateX(-50%);
+background: rgb(255, 255, 255);
+transition:  0.5s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.cart{
+    margin-left: 92%;
+    width: 35px;
+    margin-top: -21px;
+    cursor: pointer;
+}
+.container-text{
+    margin-top: 7%;
+    padding-left: 53px;
+}
+.container-text .para{
+    font-size: 47px;
+}
+.container-text h1{
+    font-size: 150px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+   
+}
+.container-text p{
+    font-size: 27px;
+    color: white;
+    margin-bottom: 21px;
+}
+.box{
+    display: flex;
+}
+.button{
+    text-decoration: none;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 5px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    margin-left: 25px;
+    margin-bottom: 13px;
+
+}
+.box span{
+    margin-left: 29px;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
+}
+
+@media screen and (max-width:1320px) {
+    .container{
+        height: 250vh;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    nav ul {   
+        padding-left: 450px;
+    }
+    .container-text h1 {
+        font-size: 115px;
+    }
+    .container-text p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    nav ul {   
+        padding-left: 250px;
+        font-size: 13px;
+    }
+    .container-text h1 {
+        font-size: 95px;
+    }
+    .container-text p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:790px) {
+    .container{
+        height: 150vh;
+    }
+    .button {
+        margin-left: 7px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .box span {
+        font-size: 12px;
+    }
+}
+
+/* @media screen and (max-width:664px) {
+.button{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+} */
+
+@media screen and (max-width:600px) {
+    nav ul {   
+        padding-left: 130px;
+    }
+    .box span {
+        font-size: 9px;
+    }
+    .container-text h1 {
+        font-size: 79px;
+    }
+    .container-text p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .box span {
+        font-size: 7px;
+        line-height: 14px;
+    }
+    nav ul {
+        padding-left: 70px;
+    }
+    nav ul li a {
+        position: absolute;
+    }
+}
+
+    @media screen and (max-width:480px) {
+        .container-text {
+            margin-top: 20%;
+            padding-left: 15px;
+        }
+        .logo {
+            width: 110px;
+            margin-left: 2px;
+        }
+        .box span {
+            margin-left: 9px;
+            font-size: 5px;
+        }
+        .button {
+            font-size: 7px;
+        }
+    }
+@media screen and (max-width:400px) {
+    .container{
+        height: 130vh;
+    }
+    nav ul {
+        padding-left: 30px;
+    }
+    nav ul li {
+        padding-left: 59px;
+    }
+    .container-text h1 {
+        font-size: 67px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
